@@ -20,4 +20,11 @@ class exerciciosController extends Controller
     public function abrirFormExer2(){
         return view('exer2');
     }
+
+    public function respostaExer2(Request $request){
+        $valor1 = $request->num1;
+        $valor2 = $request->num2;
+        $sub = $valor1 - $valor2;
+        return view('exer2', ['sub' => $sub]); 
+    }
 }

@@ -3,7 +3,7 @@
 @section('conteudo')
 
         <h1>Exercicio 2</h1>
-        <form method="post">
+        <form method="post" action="/exer2resp">
             <div class="mb-3">
                 <label for="num1" class="form-label">Digite o primeiro número</label>
                 <input type="number" id="num1" name="num1" class="form-control" required="">
@@ -15,4 +15,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
 
+        @isset($sub)
+            <p>Resultado subtração: {{ $sub }}</p>
+        @endisset
 @endsection

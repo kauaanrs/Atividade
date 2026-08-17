@@ -40,3 +40,8 @@ Route::get('/exer8', [exerciciosController::class, 'abrirFormExer8']);
 Route::post('/exer8resp', [exerciciosController::class, 'respostaExer8']);
 
 
+Route::get('/exer9', [exerciciosController::class, 'abrirFormExer9']);
+
+Route::post('/exer9resp', [exerciciosController::class, 'respostaExer9']);
+
+

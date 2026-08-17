@@ -53,4 +53,17 @@ class exerciciosController extends Controller
             return view('exer4', ['div' => $div]); 
         }
     }
+
+    public function abrirFormExer5(){
+        return view('exer5');
+    }
+
+    public function respostaExer5(Request $request){
+        $nota1 = $request->num1;
+        $nota2 = $request->num2;
+        $nota3 = $request->num3;
+
+        $media = ($nota1 + $nota2+ $nota3) / 3; 
+        return view('exer5', ['media' => $media]);
+    }
 }

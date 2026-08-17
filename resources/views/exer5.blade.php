@@ -19,7 +19,7 @@
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
     @isset($media)
-    <p>A média das notas é: {{number_format($media, 2, '.', ',')}}</p>
+        <p>A média das notas é: {{number_format($media, 2, '.', ',')}}</p>
     @endisset
 
     @endsection

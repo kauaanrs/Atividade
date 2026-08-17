@@ -16,10 +16,10 @@
         <label for="num3" class="form-label">Terceira nota</label>
         <input type="number" step="any" id="num3" name="num3" class="form-control" required="">
     </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-    @isset($media)
-        <p>A média das notas é: {{number_format($media, 2, '.', ',')}}</p>
-    @endisset
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+@isset($media)
+<p>A média das notas é: {{number_format($media, 2, '.', ',')}}</p>
+@endisset
 
-    @endsection
+@endsection

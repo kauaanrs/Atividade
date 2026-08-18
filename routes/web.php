@@ -67,3 +67,7 @@ Route::get('/exer15', [exerciciosController::class, 'abrirFormExer15']);
 
 Route::post('/exer15resp', [exerciciosController::class, 'respostaExer15']);
 
+Route::get('/exer16', [exerciciosController::class, 'abrirFormExer16']);
+
+Route::post('/exer16resp', [exerciciosController::class, 'respostaExer16']);
+

@@ -183,4 +183,16 @@ class exerciciosController extends Controller
         $valorDesc = $valor - $valor * ($desc / 100);
         return view('exer16', ['valorDesc' => $valorDesc]);
     }
+
+    public function abrirFormExer17(){
+        return view('exer17');
+    }
+
+    public function respostaExer17(Request $request){
+        $capital = $request->capital;
+        $taxa = $request->taxa;
+        $periodo = $request->periodo;
+        $montante = $capital + $capital * ($taxa / 100) * $periodo;
+        return view('exer17', ['montante' => $montante]);
+    }
 }

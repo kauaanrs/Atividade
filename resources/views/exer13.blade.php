@@ -14,7 +14,7 @@
     </form>
 
     @isset($cm)
-        <p>{{number_format($cm, 2, ',', '.')}}cm</p>
+    <p>{{number_format($cm, 2, ',', '.')}}cm</p>
     @endisset
 
 

@@ -39,11 +39,9 @@ Route::get('/exer8', [exerciciosController::class, 'abrirFormExer8']);
 
 Route::post('/exer8resp', [exerciciosController::class, 'respostaExer8']);
 
-
 Route::get('/exer9', [exerciciosController::class, 'abrirFormExer9']);
 
 Route::post('/exer9resp', [exerciciosController::class, 'respostaExer9']);
-
 
 Route::get('/exer10', [exerciciosController::class, 'abrirFormExer10']);
 
@@ -61,8 +59,11 @@ Route::get('/exer13', [exerciciosController::class, 'abrirFormExer13']);
 
 Route::post('/exer13resp', [exerciciosController::class, 'respostaExer13']);
 
-
 Route::get('/exer14', [exerciciosController::class, 'abrirFormExer14']);
 
 Route::post('/exer14resp', [exerciciosController::class, 'respostaExer14']);
+
+Route::get('/exer15', [exerciciosController::class, 'abrirFormExer15']);
+
+Route::post('/exer15resp', [exerciciosController::class, 'respostaExer15']);
 

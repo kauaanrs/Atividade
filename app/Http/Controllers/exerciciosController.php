@@ -219,4 +219,16 @@ class exerciciosController extends Controller
         $segundos = $minutos * 60;
         return view('exer19', ['dias' => $dias, 'horas' => $horas, 'minutos' => $minutos, 'segundos' => $segundos]);
     }
+
+    public function abrirFormExer20(){
+    return view('exer20');
+    }
+
+    public function respostaExer20(Request $request){
+        $dist = $request->dist;
+        $tempo = $request->tempo;
+        $velocidade = $dist / $tempo; 
+        return view('exer20', ['velocidade' => $velocidade]);
+    }
+
 }
